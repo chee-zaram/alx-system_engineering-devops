@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | sed 's/$//, [/'  
+ls -a -F --file-type / *[.]
