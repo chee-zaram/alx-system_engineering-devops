@@ -1,1 +1,1 @@
-Readme file for a repo for a shell basics alx project
+Repo for ALX-SE projects in system engineering devops, sprint 1.
