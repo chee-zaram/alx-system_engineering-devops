@@ -17,7 +17,7 @@ Display current directory contents, including hidden files (starting with .) in 
 Using *ls* with *-l* and *-a* options. 
 ### 5-listfilesdigitonly
 Display current directory contents, with long format, user and group IDs displayed numerically, and hidden files(starting with .) shown.
-As above.
+Using *ls* with *-n* option.
 ### 6-firstdirectory
 Creates a directory named ***my_first_directory*** in ***/tmp/*** directory.
 Using *mkdir*.
@@ -56,7 +56,7 @@ Creates the directories ***welcome/***, ***welcome/to/***, and ***welcome/to/sch
 Using *mkdir* with multiple arguments.
 ### 103-commas
 List all files and directories of the current directory, seperated by commas, with directory names ending in ***/*** and hidden files also displayed.
-Using *--file-type* option of *ls*.
+Using *--file-type* and *-m* options with *ls*.
 
 ### school.mgc
 **school.mgc** is compiled from file school using the *file* command with *-C* and *-m* options, and is a magic file that can be used with the command file to detect School data file.
