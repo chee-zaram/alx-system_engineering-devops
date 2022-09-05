@@ -15,6 +15,6 @@ Displays the first 10 lines of */etc/passwd*. [link](https://github.com/chee-zar
 ### 6-third_line
 Displays the third line of the file *iacta*. [link](https://github.com/chee-zaram/alx-system_engineering-devops/blob/master/0x02-shell_redirections/6-third_line).
 ### 7-file
-Creates a file named exactly _\\\*\\\\\'\"Best\ School\"\\\'\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\)_. [link](https://github.com/chee-zaram/alx-system_engineering-devops/blob/master/0x02-shell_redirections/7-file).
+Creates a file named exactly _\\\*\\\\\'\"Best School\"\\\'\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\)_. [link](https://github.com/chee-zaram/alx-system_engineering-devops/blob/master/0x02-shell_redirections/7-file).
 ### 8-cwd_state
 Writes into the file *ls_cwd_content* the result of the command *ls -la*. If the file *ls_cwd_content* already exists, it should be overwritten. If the file *ls_cwd_content* does not exist, create it. [link](https://github.com/chee-zaram/alx-system_engineering-devops/blob/master/0x02-shell_redirections/8-cwd_state).
