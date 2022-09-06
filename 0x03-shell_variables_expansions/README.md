@@ -1,5 +1,5 @@
 ## Shell Variables and Expansions
-This directory contains bash scripts that can carry out the following processes:
+This directory contains bash scripts that:
 ### 0-alias
 Creates an alias with name **ls** and value ___rm *___. [link](https://github.com/chee-zaram/alx-system_engineering-devops/blob/master/0x03-shell_variables_expansions/0-alias).
 ### 1-hello_you
