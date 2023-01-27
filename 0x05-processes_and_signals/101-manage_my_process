@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# init script to manage `manage_my_process` script
+
+# Set file paths
+pid_file="/var/run/my_process.pid"
+
+# Check if the argument is valid
+if [[ "$1" != "start" ]] && [[ "$1" != "stop" ]] && [[ "$1" != "restart" ]]; then
+    echo "Usage: manage_my_process {start|stop|restart}"
+    exit 1
+fi
+
+# Check if the process is already running
+if [[ -f "$pid_file" ]]; then
+    pid=$(cat "$pid_file")
+    if ps -p "$pid" > /dev/null; then
+        running=1
+    else
+        running=0
+    fi
+else
+    running=0
+fi
+
+# Perform the requested action
+if [[ "$1" == "start" ]]; then
+    if [[ "$running" -eq 1 ]]; then
+        echo "manage_my_process is already running with PID $pid"
+    else
+        ./manage_my_process &
+        echo $! | sudo tee "$pid_file" > /dev/null
+        echo "manage_my_process started"
+    fi
+elif [[ "$1" == "stop" ]]; then
+    if [[ "$running" -eq 0 ]]; then
+        echo "manage_my_process is not running"
+    else
+        kill "$pid"
+        sudo rm -f "$pid_file"
+        echo "manage_my_process stopped"
+    fi
+elif [[ "$1" == "restart" ]]; then
+    if [[ "$running" -eq 0 ]]; then
+        echo "manage_my_process is not running"
+    else
+        kill "$pid"
+        sudo rm -f "$pid_file"
+    fi
+    ./manage_my_process &
+    echo $! | sudo tee "$pid_file" > /dev/null
+    echo "manage_my_process restarted"
+fi
