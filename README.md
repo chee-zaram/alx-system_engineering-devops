@@ -1,5 +1,7 @@
 # Home of ALX-SE projects in System Engineering & DevOps.
 
+---
+
 This is from sprint 1, and projects are as follows:
 
 ## Shell Basics
@@ -20,4 +22,9 @@ Working with local and global variables, arithmetic expansions. [click here](htt
 
 ## Loops, conditions and parsing
 
-Learning more advnaced syntax and semantics in shell scripting. [click here]().
+Learning more advnaced syntax and semantics in shell scripting. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x04-loops_conditions_and_parsing).
+
+## Processes and Signals
+
+Understanding what processes are, how they work, how the they are controlled by
+the system, and how they can be sent signals. [click here]().
