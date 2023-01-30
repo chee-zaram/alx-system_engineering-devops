@@ -1,9 +1,9 @@
+#include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <errno.h>
-#include <string.h>
 
 /**
  * infinite_while - runs a while loop infinitely with a sleep command
@@ -26,7 +26,7 @@ int infinite_while(void)
 int main(void)
 {
 	pid_t zombie_process;
-	int i;
+	int   i;
 
 	for (i = 0; i < 5; i++)
 	{
