@@ -27,4 +27,9 @@ Learning more advnaced syntax and semantics in shell scripting. [click here](htt
 ## Processes and Signals
 
 Understanding what processes are, how they work, how the they are controlled by
-the system, and how they can be sent signals. [click here]().
+the system, and how they can be sent signals. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x05-processes_and_signals).
+
+## Regular Expression
+
+Understanding and using regular expressions using [Oniguruma](https://github.com/kkos/oniguruma) which ships with
+Ruby by default. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x06-regular_expressions).
