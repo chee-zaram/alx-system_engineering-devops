@@ -36,4 +36,8 @@ Ruby by default. [click here](https://github.com/chee-zaram/alx-system_engineeri
 
 ## Networking Basics #0
 
-Learning and implementing some of the most important concepts in Networking. [click here]().
+Learning and implementing some of the most important concepts in Networking. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x07-networking_basics).
+
+## Networking Basics #1
+
+Some more concepts in networking [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x08-networking_basics_2).
