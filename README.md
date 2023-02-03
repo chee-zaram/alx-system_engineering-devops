@@ -2,7 +2,7 @@
 
 ---
 
-This is from sprint 1, and projects are as follows:
+Projects are as follows, and link to their repsepective project directories:
 
 ## Shell Basics
 

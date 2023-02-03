@@ -22,12 +22,27 @@ if [[ -f $host_file ]]; then
 
     # replace entire lines that match an ipv4 address and any of our dns with the new ipv4
     sed -i "s/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\s\+$localhost_dns$/$localhost_ip\t$localhost_dns/g" "$tmp_file"
+    # checking if the substitution was made
+    localhost_count=$(grep -c "$localhost_ip\t$localhost_dns" "$tmp_file")
+    if [[ $localhost_count -eq 0 ]]; then
+        # if no substitution was made, add the dns and ip
+        printf "%s\t%s\n" "$localhost_ip" "$localhost_dns" >> "$tmp_file"
+    fi
+
     sed -i "s/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\s\+$facebook_dns$/$facebook_ip\t$facebook_dns/g" "$tmp_file"
+    # checking if the substitution was made
+    facebook_count=$(grep -c "$facebook_ip\t$facebook_dns" "$tmp_file")
+    if [[ $facebook_count -eq 0 ]]; then
+        # if no substitution was made, add the dns and ip
+        printf "%s\t%s\n" "$facebook_ip" "$facebook_dns" >> "$tmp_file"
+    fi
+
     sudo cp -f "$tmp_file" $host_file
     rm -f "$tmp_file"
 else
-    sed -i "s/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\s\+$localhost_dns$/$localhost_ip\t$localhost_dns/g" "$tmp_file"
-    sed -i "s/^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\s\+$facebook_dns$/$facebook_ip\t$facebook_dns/g" "$tmp_file"
+    # if the hosts file does not exist, create it
+    printf "%s\t%s\n" "$localhost_ip" "$localhost_dns" >> "$tmp_file"
+    printf "%s\t%s\n" "$facebook_ip" "$facebook_dns" >> "$tmp_file"
     sudo cp -f "$tmp_file" $host_file
     rm -f "$tmp_file"
 fi
