@@ -5,5 +5,5 @@
 NAMES="$( ls )"
 
 for name in $NAMES; do
-	echo "$name" | cut -d "-" -f 2-
+    echo "$name" | cut -d "-" -f 2-
 done

@@ -8,14 +8,14 @@ minutes=1
 echo "Hour: $hours"
 
 while true; do
-	echo "$minutes"
-	if [ $hours -eq 12 ] && [ $minutes -eq 59 ]; then
-		break
-	fi
-	if [ $minutes -eq 59 ]; then
-		(( hours++ ))
-		echo "Hour: $hours"
-		minutes=0
-	fi
-	(( minutes++ ))
+    echo "$minutes"
+    if [ $hours -eq 12 ] && [ $minutes -eq 59 ]; then
+        break
+    fi
+    if [ $minutes -eq 59 ]; then
+        (( hours++ ))
+        echo "Hour: $hours"
+        minutes=0
+    fi
+    (( minutes++ ))
 done
