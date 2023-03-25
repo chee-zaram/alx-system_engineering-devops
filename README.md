@@ -45,3 +45,7 @@ Some more concepts in networking [click here](https://github.com/chee-zaram/alx-
 ## Configuration Management
 
 Learning about web server configuration and how to use Apache and PHP. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x0A-configuration_management).
+
+## SSH
+
+In this project, we learn about Secure Shell Protocol (SSH). [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x0B-ssh).
