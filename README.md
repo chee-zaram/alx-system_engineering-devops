@@ -53,3 +53,7 @@ In this project, we learn about Secure Shell Protocol (SSH). [click here](https:
 ## Web Server
 
 This project is about the basics of web servers using Nginx. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x0C-web_server).
+
+## Web Stack Debugging #0
+
+Here, we learn the basics of debugging web servers using Apache. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_basics).
