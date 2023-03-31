@@ -28,13 +28,7 @@ echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html &>/dev/null;
 sudo sh -c 'echo "server {
     listen 80 default_server;
     listen [::]:80 default_server;
-    server_name cheezaram.tech www.cheezaram.tech;
-
-    # set default behaviour for 404 errors specifying page
-    error_page 404 /404.html;
-    location = /404.html {
-        root /var/www/html;
-    }
+    server_name cheezaram.tech;
 
     # move /redirect_me to 301 Moved Permanently
     rewrite ^/redirect_me$ http://cheezaram.tech permanent;
