@@ -40,6 +40,19 @@ sudo sh -c 'echo "server {
         try_files \$uri \$uri/ =404;
         error_page 404 /404.html;
     }
+
+    # set default behaviour for 404 errors specifying page
+    location = /404.html {
+        root /var/www/html;
+    }
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name www.cheezaram.tech;
+
+    return 301 \$scheme://cheezaram.tech\$request_uri;
 }" > /etc/nginx/sites-available/default';
 
 # create the html page to display hello world
