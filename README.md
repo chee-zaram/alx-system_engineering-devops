@@ -57,3 +57,7 @@ This project is about the basics of web servers using Nginx. [click here](https:
 ## Web Stack Debugging #0
 
 Here, we learn the basics of debugging web servers using Apache. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_basics).
+
+## Load Balancer
+
+We dive into the world of high availability and load balancing. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x0F-load_balancer).
