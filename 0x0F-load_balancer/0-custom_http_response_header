@@ -26,7 +26,7 @@ sudo ufw allow 80/tcp &>/dev/null;
 sudo ufw allow 'Nginx HTTP' &>/dev/null;
 
 echo "Enabling ufw firewall..."
-sudo ufw enable;
+# sudo ufw enable;
 
 # start nginx
 echo "Starting nginx..."
@@ -84,28 +84,28 @@ else
 fi;
 
 # confirm docker is installed
-if ! (sudo docker --version | grep -q "Docker version"); then
-    # install docker
-    sudo apt install apt-transport-https ca-certificates curl software-properties-common -y &>/dev/null;
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - &>/dev/null;
-    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" &>/dev/null;
-
-    echo "Installing docker..."
-    sudo apt install docker-ce -y &>/dev/null;
-    echo "docker is installed";
-fi
-
-if sudo docker --version | grep -q "Docker version"; then
-    echo "docker is installed";
-else
-    echo "docker failed to install";
-    exit 1;
-fi
-
-# add user to docker group
-echo "Adding ${USER} to docker group";
-sudo usermod -aG docker "${USER}";
-echo "docker group is added";
+# if ! (sudo docker --version | grep -q "Docker version"); then
+#     # install docker
+#     sudo apt install apt-transport-https ca-certificates curl software-properties-common -y &>/dev/null;
+#     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - &>/dev/null;
+#     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" &>/dev/null;
+#
+#     echo "Installing docker..."
+#     sudo apt install docker-ce -y &>/dev/null;
+#     echo "docker is installed";
+# fi
+#
+# if sudo docker --version | grep -q "Docker version"; then
+#     echo "docker is installed";
+# else
+#     echo "docker failed to install";
+#     exit 1;
+# fi
+#
+# # add user to docker group
+# echo "Adding ${USER} to docker group";
+# sudo usermod -aG docker "${USER}";
+# echo "docker group is added";
 
 # add custom header to the server response
 header_name="X-Served-By"
