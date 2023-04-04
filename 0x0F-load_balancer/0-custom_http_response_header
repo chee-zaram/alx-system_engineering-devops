@@ -8,9 +8,7 @@
 # add a custom header to the server response
 
 # stop any service using port 80
-for pid in $(sudo lsof -t -i :80); do
-    sudo kill "$pid" &>/dev/null
-done
+sudo service "$(sudo lsof -i :80 | grep LISTEN | awk '{print $1}' | head -n 1)" stop &>/dev/null
 
 # update package index and install nginx
 sudo apt-get update &>/dev/null;
@@ -111,7 +109,7 @@ fi;
 header_name="X-Served-By"
 header_value=$(hostname)
 
-if ! (sudo cat /etc/nginx/nginx.conf | grep "add_header \"$header_name\" \"$header_value\"" &>/dev/null); then
+if ! grep -q "add_header \"$header_name\" \"$header_value\"" /etc/nginx/nginx.conf; then
     sudo sed -i "s/# server_tokens off;/&\n\tadd_header \"$header_name\" \"$header_value\";/" /etc/nginx/nginx.conf
     echo "$header_name custom header set to $header_value";
 fi
