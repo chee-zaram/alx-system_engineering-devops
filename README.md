@@ -61,3 +61,7 @@ Here, we learn the basics of debugging web servers using Apache. [click here](ht
 ## Load Balancer
 
 We dive into the world of high availability and load balancing. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x0F-load_balancer).
+
+## HTTPS
+
+We learn how to secure network traffic using HTTPS. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x10-https).
