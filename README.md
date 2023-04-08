@@ -65,3 +65,7 @@ We dive into the world of high availability and load balancing. [click here](htt
 ## HTTPS
 
 We learn how to secure network traffic using HTTPS. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x10-https).
+
+## Web Stack Debugging #1
+
+We learn how to find and fix problems on remote servers. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x0E-web_stack_debugging_basics_1).
