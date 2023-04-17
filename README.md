@@ -69,3 +69,7 @@ We learn how to secure network traffic using HTTPS. [click here](https://github.
 ## Web Stack Debugging #1
 
 We learn how to find and fix problems on remote servers. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x0E-web_stack_debugging_basics_1).
+
+## Firewall
+
+We learn to use `ufw` and setup basic firewalls on our server. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x13-firewall).
