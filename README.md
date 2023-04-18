@@ -77,3 +77,7 @@ We learn to use `ufw` and setup basic firewalls on our server. [click here](http
 ## Web Stack Debugging #2
 
 We learn to debug problems on remote servers. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x12-web_stack_debugging_2).
+
+## MySQL
+
+Manage mySQL databases with the `mysql` command line tool on remote servers. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x14-mysql).
