@@ -73,3 +73,7 @@ We learn how to find and fix problems on remote servers. [click here](https://gi
 ## Firewall
 
 We learn to use `ufw` and setup basic firewalls on our server. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x13-firewall).
+
+## Web Stack Debugging #2
+
+We learn to debug problems on remote servers. [click here](https://github.com/chee-zaram/alx-system_engineering-devops/tree/master/0x12-web_stack_debugging_2).
