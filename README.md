@@ -112,3 +112,8 @@ We learn to use data from apis as well as program them.
 ## API Advanced
 
 We make some more API queries, this time to the `Reddit` API.
+
+## Web Monitoring
+
+In this project, we learn to use monitoring tools such as `Datadog` to get
+important information on applications and web servers.
