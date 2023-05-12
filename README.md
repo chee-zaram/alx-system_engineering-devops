@@ -117,3 +117,10 @@ We make some more API queries, this time to the `Reddit` API.
 
 In this project, we learn to use monitoring tools such as `Datadog` to get
 important information on applications and web servers.
+
+## Post-moterm
+
+A post-mortem, also known as a retrospective or after-action review (AAR), is a
+process of reflecting on a project or incident after it has occurred. It
+involves a thorough examination of the project or incident to identify what
+worked, what didn't, and what could be improved upon in the future.
