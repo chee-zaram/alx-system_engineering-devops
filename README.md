@@ -124,3 +124,8 @@ A post-mortem, also known as a retrospective or after-action review (AAR), is a
 process of reflecting on a project or incident after it has occurred. It
 involves a thorough examination of the project or incident to identify what
 worked, what didn't, and what could be improved upon in the future.
+
+## Application Server
+
+This is a project that deals with configuration of a server to link a web server
+and an application server.
