@@ -129,3 +129,8 @@ worked, what didn't, and what could be improved upon in the future.
 
 This is a project that deals with configuration of a server to link a web server
 and an application server.
+
+## Web Stack Debugging #4
+
+In this project, we dive deeper into identifying and fixing bugs in the web
+stack.
